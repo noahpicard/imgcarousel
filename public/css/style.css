@@ -1,0 +1,83 @@
+.title {
+	font-size: 20px;
+	font-family: "Helvetica Neue", Helvetica;
+}
+
+.container {
+	width: 100%;
+	max-width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.imgcarousel-carousel {
+	width: 100%;
+	position: relative;
+}
+
+.imgcarousel-item {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+
+.imgcarousel-item-image {
+	width: 100%;
+	opacity: 0;
+	transition: opacity 1.2s;
+	object-fit: contain;
+}
+
+.imgcarousel-item-image-active {
+	opacity: 1;
+}
+
+.imgcarousel-select-group-container {
+	position: absolute;
+	bottom: 5px;
+	left: 50%;
+}
+
+.imgcarousel-select-group {
+	position: relative;
+	left: -50%;
+	z-index: 1;
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	justify-content: center;
+}
+
+.imgcarousel-select {
+	margin: 5px;
+	width: 10px;
+    height: 10px;
+    padding: 5px;
+    cursor: pointer;
+    color: transparent;
+    border: 1px solid rgba(200,200,200,0.8);
+    box-shadow: 0 0 3px rgba(0,0,0,0.5);
+    border-radius: 1em;
+    outline: none;
+    background: rgba(127,127,127,0.8);
+}
+
+.imgcarousel-select-active {
+	background: rgba(0,0,0,0.8);
+}
+
+.imgcarousel-arrow {
+	margin: 5px 10px;
+	width: 10px;
+    height: 10px;
+    padding: 5px;
+    cursor: pointer;
+    color: transparent;
+    border: 1px solid rgba(200,200,200,0.8);
+    box-shadow: 0 0 3px rgba(0,0,0,0.5);
+    border-radius: 1em;
+    outline: none;
+    background: rgba(170,170,170,0.8);
+}
